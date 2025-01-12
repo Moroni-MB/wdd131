@@ -1,3 +1,53 @@
+* {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+}
+
+h1 {
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+h2 {
+    color: #006EB6;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+p {
+    text-align: left;
+}
+
+main {
+    max-width: 600px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-top: 1px solid lightgray;
+}
+
 .content{
     text-align: center;
+    border: 1px gray solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 3rem;
+    margin: 3rem;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-top: 2rem;
+}
+
+li {
+    padding-bottom: 15px;
+    text-align: left;
 }
