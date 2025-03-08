@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="recipes.css" />
+    <script src="main.js" defer></script>
+    <meta property="og:title" content="Recipe Book">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="A list of my favorite recipes!">
+    <meta property="og:image" content="/images/apple-crisp.jpg">
+    <meta property="og:url" content="URL of the page">
+    <meta name="twitter:card" content="summary_large_image">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header-items">
+          <img src="images/recipe-book.png" alt="recipe book logo" id="logo" />
+          <h1 id="page-title">RecipeBook</h1>
+        </div>
+        <div class="search-container">
+          <input
+            type="text"
+            id="searchBar"
+            placeholder="Search for a recipe..."
+          />
+          <img src="images/search.svg" alt="Search Icon" class="search-icon" />
+        </div>
+      </header>
+      <main id="recipe-container">
+        <hr />
+        <div class="recipe">
+          <div class="recipe-content">
+            <img src="images/apple-crisp.jpg" alt="recipe Image" />
+            <div class="recipe-text">
+              <button>dessert</button>
+              <h2>Apple Crisp</h2>
+              <div
+                class="rating"
+                role="img"
+                aria-label="Rating: 4 out of 5 stars"
+              >
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star-empty">⭐</span>
+                <span aria-hidden="true" class="icon-star-empty">☆</span>
+              </div>
+              <p>
+                This is a description of the first recipe. It includes some
+                details about the ingredients and preparation steps.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="social">
+          <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+          <a href="#"
+            ><img src="images/instagram_icon.svg" alt="instagram icon"
+          /></a>
+          <a href="#"
+            ><img src="images/youtube_icon.svg" alt="youtube icon"
+          /></a>
+          <a href="#"
+            ><img src="images/pinterest_icon.svg" alt="pinterest icon"
+          /></a>
+        </div>
+        <a
+          id="credits"
+          href="https://www.flaticon.com/free-icons/recipe"
+          title="recipe icons"
+          >Recipe icons created by Freepik - Flaticon</a
+        >
+      </footer>
+    </div>
+  </body>
+</html>
