@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+h1 {
+    color: #333;
+}
+
+select {
+    padding: 5px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+#chord-display {
+    margin-top: 20px;
+}
+
+#chord-diagram {
+    display: grid;
+    grid-template-columns: repeat(6, 40px);
+    gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.string {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.finger {
+    background-color: #ff5722;
+    color: white;
+}

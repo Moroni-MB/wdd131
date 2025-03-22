@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <img src="images/Moroni_Montoya.png" alt="Personal Logo" />
+        <a href="index.html">Home</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a id="contact" href="contact-us.html">Contact Me</a>
+      </nav>
+    </header>
+    <main class="contactus">
+      <div id="feedback"></div>
+      <form action="#" method="post">
+        <p>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name" />
+        </p>
+        <p>
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email" />
+        </p>
+        <p>
+          <label for="msg">Message:</label>
+          <textarea id="msg" name="user_message"></textarea>
+        </p>
+        <p class="button">
+          <button type="submit">Send your message</button>
+        </p>
+      </form>
+    </main>
+    <footer>
+      <div id="logo">
+        <img class="logo" src="images/Moroni_Montoya.png" alt="personal logo" />
+      </div>
+      <nav id="footernav">
+        <a href="site-plan.html">Site Plan</a>
+        <a href="#">Contact Me</a>
+      </nav>
+      <div class="socials">
+        <a href="https://www.facebook.com/moroni.montoyabernal/" target="_blank">
+          <img src="images/facebook2.png" alt="fb icon" />
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="images/x-social.png" alt="twitter icon" />
+        </a>
+        <a href="https://www.instagram.com/moroni_bernal21/" target="_blank">
+          <img src="images/insta.png" alt="instagram icon" />
+        </a>
+        <a href="https://www.linkedin.com/in/moroni-montoya/" target="_blank">
+          <img src="images/linked-in.png" alt="linked-in icon" />
+        </a>
+      </div>
+    </footer>
+    <script>
+      /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-100px";
+        }
+        prevScrollpos = currentScrollPos;
+      };
+      // get the feedback div element so we can do something with it.
+      const feedbackElement = document.getElementById("feedback");
+      // get the form so we can read what was entered in it.
+      const formElement = document.forms[0];
+      // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+      formElement.addEventListener("submit", function (e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML =
+          "Hello " +
+          formElement.user_name.value +
+          "! This section is not functional at the moment, it is for demonstration purposes only. Please use the social media links to contact me.";
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle("moveDown");
+      });
+    </script>
+  </body>
+</html>
