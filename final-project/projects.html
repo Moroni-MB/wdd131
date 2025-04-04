@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
@@ -16,43 +17,37 @@
         <a id="contact" href="contact-us.html">Contact Me</a>
       </nav>
     </header>
-    <main id="projects_main">
-      <h1 id="sub_h1">Projects</h1>
-      <div id="project_box">
-        <div class="img_wrap">
-          <img src="images/logic_gate.jpeg" alt="Logic Gate" />
-          <div class="img_description">
-            <h1>Circuit Logic Gate</h1>
-            <p>Built logic gates for binary operations: OR, AND, XOR.</p>
-          </div>
+    <main>
+      <section id="projects_main">
+        <h1 id="sub_h1">Projects</h1>
+        <div id="project_box">
+          <!-- Projects will be dynamically generated here -->
         </div>
-        <div class="img_wrap">
-          <img src="images/voltometer.jpeg" alt="Voltometer" />
-          <div class="img_description">
-            <h1>Voltometer</h1>
-            <p>Designed a voltage-measuring circuit with LCD display.</p>
-          </div>
-        </div>
-        <div class="img_wrap">
-          <img src="images/robot.jpg" alt="Robot" />
-          <div class="img_description">
-            <h1>Claw Robot</h1>
-            <p>Built a remote-controlled robot for handling objects.</p>
-          </div>
-        </div>
-        <a
-          href="https://moroni-mb.github.io/wdd130/wwr/index.html"
-          class="clickable"
-        >
-          <div class="img_wrap">
-            <img src="images/wwr_website.png" alt="Robot" />
-            <div class="img_description">
-              <h1>White Water Rafting Website</h1>
-              <p>I made a website for a white water rafting company.</p>
-            </div>
-          </div>
-        </a>
-      </div>
+      </section>
+
+      <section id="add-project">
+        <h2 id="sub_h2">Add a New Project</h2>
+        <form id="project-form">
+          <input type="text" id="title" placeholder="Project Title" required />
+          <input type="url" id="link" placeholder="Project Link (optional)" />
+          <textarea
+            id="description"
+            placeholder="Project Description"
+            required
+          ></textarea>
+
+          <!-- Image Upload -->
+          <input type="file" id="image" accept="image/*" />
+          <img
+            id="preview"
+            src=""
+            alt="Image Preview"
+            style="display: none; max-width: 100px"
+          />
+
+          <button type="submit">Add Project</button>
+        </form>
+      </section>
     </main>
     <footer>
       <div id="logo">
@@ -63,7 +58,10 @@
         <a href="contact-us.html">Contact Me</a>
       </nav>
       <div class="socials">
-        <a href="https://www.facebook.com/moroni.montoyabernal/" target="_blank">
+        <a
+          href="https://www.facebook.com/moroni.montoyabernal/"
+          target="_blank"
+        >
           <img src="images/facebook2.png" alt="fb icon" />
         </a>
         <a href="https://twitter.com" target="_blank">
@@ -77,6 +75,14 @@
         </a>
       </div>
     </footer>
+    <!-- Modal for image display -->
+    <div id="imageModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <img id="modalImg" src="" alt="Larger Image" />
+        <div id="modalDescription"></div>
+      </div>
+    </div>
     <script>
       /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
       var prevScrollpos = window.pageYOffset;
