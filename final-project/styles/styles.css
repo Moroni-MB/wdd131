@@ -485,7 +485,7 @@ a.clickable:hover{
 
 /* Preview Image */
 #preview {
-  max-width: 100%;
+  max-width: 30%;
   margin-top: 10px;
   display: none;
   border-radius: 8px;

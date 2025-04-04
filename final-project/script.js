@@ -27,6 +27,12 @@ document.addEventListener("DOMContentLoaded", () => {
         const description = document.getElementById("description").value;
         const imageSrc = preview.src;
 
+        if (!title.trim() || !description.trim()) {
+            alert("Please fill out all required fields.");
+            return;
+        }
+        
+
         if (!imageSrc) {
             alert("Please upload an image for your project.");
             return;
@@ -83,9 +89,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     window.deleteProject = (index) => {
-        projects.splice(index, 1);
-        localStorage.setItem("projects", JSON.stringify(projects));
-        displayProjects();
+        if (confirm("Are you sure you want to delete this project?")) {
+            projects.splice(index, 1);
+            localStorage.setItem("projects", JSON.stringify(projects));
+            displayProjects();
+        }
     };
 
     function viewerTemplate(pic, alt, description) {
