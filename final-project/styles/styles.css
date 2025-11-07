@@ -407,6 +407,7 @@ a.clickable:hover{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 1000;
 }
 
 .viewer .close-viewer {
