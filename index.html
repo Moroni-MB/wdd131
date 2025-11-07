@@ -1,36 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- https://moroni-mb.github.io/wdd131/ -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Educational Site for WDD 131">
     <meta name="author" content="Moroni Montoya">
-    <title>Moroni Montoya: WDD 131 portfolio</title>
-    <link href="style.css" rel="stylesheet"/>
+    <title>Moroni Montoya: WDD 131 Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- header -->
+    <!-- Header -->
     <header>
-        <h1>Moroni Montoya: WDD 131 Portfolio</h1>
+        <div class="profile-section">
+            <!-- Add your profile image here -->
+            <!-- <img src="profile.jpg" alt="Moroni Montoya" class="profile-img"> -->
+            <h1>Moroni Montoya</h1>
+            <p class="subtitle">Web Design & Development Student</p>
+            <p class="bio">Passionate about creating beautiful, functional web experiences. Currently studying at BYU-Idaho and building my skills in Software Development.</p>
+            <div class="social-links">
+                <a href="https://github.com/Moroni-MB?tab=overview&from=2025-11-01&to=2025-11-07" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/moroni-montoya/" target="_blank">LinkedIn</a>
+                <a href="mailto:moronimontoya04@gmail.com">Contact</a>
+            </div>
+        </div>
     </header>
 
-    <!-- main -->
+    <!-- Main Content -->
     <main>
-        <a href="creditcard/index.html">Credit Card</a>
-        <a href="coolpics/index.html">Coolpics</a>
-        <a href="blog/index.html">Blog Project</a>
-        <a href="courses/courses.html">Courses</a>
-        <a href="register/index.html">Register</a>
-        <a href="recipes/index.html">Recipes</a>
-        <a href="final-project/site-plan.html">Personal Portfolio Page</a>
-        <a href="final-project/index.html">Personal Portfolio Final Project</a>
+        <!-- Skills Section -->
+        <section class="skills-section">
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-subtitle">Technologies and tools I work with</p>
+            <div class="skills-grid">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Responsive Design</span>
+                <span class="skill-tag">Web Accessibility</span>
+                <span class="skill-tag">Git & GitHub</span>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Showcasing my best work from WDD 131</p>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="project-img">🎨</div>
+                    <div class="project-content">
+                        <h3>Personal Portfolio Site</h3>
+                        <p>Complete portfolio website showcasing my work, skills, and professional experience.</p>
+                        <div class="project-tags">
+                            <span class="tag">Full Site</span>
+                            <span class="tag">Responsive</span>
+                            <span class="tag">Portfolio</span>
+                        </div>
+                        <a href="final-project/index.html" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">💳</div>
+                    <div class="project-content">
+                        <h3>Credit Card Benefits Tracker</h3>
+                        <p>An interactive tool to help users track and maximize their credit card rewards and benefits.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="creditcard/index.html" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">📸</div>
+                    <div class="project-content">
+                        <h3>Coolpics Gallery</h3>
+                        <p>A responsive image gallery with modern design and smooth transitions for viewing photos.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                        <a href="coolpics/index.html" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">✍️</div>
+                    <div class="project-content">
+                        <h3>Blog Project</h3>
+                        <p>A clean, modern blog layout demonstrating semantic HTML and CSS best practices.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Typography</span>
+                        </div>
+                        <a href="blog/index.html" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">📚</div>
+                    <div class="project-content">
+                        <h3>Course Selector</h3>
+                        <p>Dynamic course filtering system with JavaScript functionality and clean UI design.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">DOM</span>
+                            <span class="tag">Filtering</span>
+                        </div>
+                        <a href="courses/courses.html" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">📝</div>
+                    <div class="project-content">
+                        <h3>Registration Form</h3>
+                        <p>User-friendly registration form with validation and accessible design principles.</p>
+                        <div class="project-tags">
+                            <span class="tag">Forms</span>
+                            <span class="tag">Validation</span>
+                            <span class="tag">Accessibility</span>
+                        </div>
+                        <a href="register/index.html" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">🍳</div>
+                    <div class="project-content">
+                        <h3>Recipe Collection</h3>
+                        <p>Beautiful recipe cards with organized layout and intuitive navigation system.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS Grid</span>
+                            <span class="tag">Layout</span>
+                        </div>
+                        <a href="recipes/index.html" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">📋</div>
+                    <div class="project-content">
+                        <h3>Site Plan</h3>
+                        <p>Detailed planning document for the personal portfolio project including wireframes and design.</p>
+                        <div class="project-tags">
+                            <span class="tag">Planning</span>
+                            <span class="tag">Design</span>
+                            <span class="tag">Documentation</span>
+                        </div>
+                        <a href="final-project/site-plan.html" class="project-link">View Plan →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <!-- footer -->
+    <!-- Footer -->
     <footer>
-
+        <p>&copy; 2024 Moroni Montoya | WDD 131 Portfolio | Built with passion for web development</p>
     </footer>
-
 </body>
 </html>
