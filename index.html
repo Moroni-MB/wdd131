@@ -3,233 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio website showcasing my best personal and school projects">
+    <meta name="description" content="Portfolio of Moroni Montoya - Full-Stack Developer">
     <meta name="author" content="Moroni Montoya">
-    <title>Moroni Montoya: Portfolio</title>
+    <title>Moroni Montoya | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Header -->
-    <header>
-        <div class="profile-section">
-            <!-- Add your profile image here -->
-            <!-- <img src="profile.jpg" alt="Moroni Montoya" class="profile-img"> -->
-            <h1>Moroni Montoya</h1>
-            <p class="subtitle">Full-Stack Developer | Flutter • C# • Firebase • JavaScript</p>
-            <p class="bio">Passionate about creating beautiful, functional web experiences. Currently studying at BYU-Idaho and building my skills in Software Development.</p>
-            <div class="social-links">
-                <a href="https://github.com/Moroni-MB?tab=overview&from=2025-11-01&to=2025-11-07" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/moroni-montoya/" target="_blank">LinkedIn</a>
-                <a href="mailto:moronimontoya04@gmail.com">Contact</a>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">Moroni Montoya</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<header class="hero">
+    <h1>Moroni Montoya Bernal</h1>
+
+    <p class="hero-subtitle">
+        <span id="typing-role"></span><span class="cursor">|</span>
+    </p>
+
+    <p class="hero-description">
+        I build clean, user-focused applications that solve real problems. Currently majoring in Computer Science at BYU-Idaho and growing my skills in modern software development.
+    </p>
+
+    <div class="cta-buttons">
+        <a href="projects.html" class="primary-btn">View My Work</a>
+        <a href="contact.html" class="secondary-btn">Contact Me</a>
+    </div>
+</header>
+
+<!-- PROFESSIONAL OVERVIEW -->
+<main>
+
+    <section class="overview">
+
+        <h2 class="section-title">Professional Overview</h2>
+        <p class="section-subtitle">A quick snapshot of who I am and what I do</p>
+
+        <div class="overview-card-single">
+            <h3>Full-Stack Developer & Computer Science Student</h3>
+
+            <p>
+                I’m a developer focused on building clean, user-friendly applications using
+                Flutter, Firebase, JavaScript, and C#. I am passionate about AI and implementing machine learning solutions to speed up processes and development, and I enjoy turning ideas into real,
+                functional software that solves problems and improves user experience.
+            </p>
+
+            <p>
+                Currently majoring in Computer Science and minoring in AI Engineering at BYU-Idaho, I’m actively building projects
+                in AI-powered automation, mobile development, web applications, and software design with a strong focus
+                on writing maintainable and scalable code.
+            </p>
+
+            <div class="overview-highlights">
+                <span>📍 BYU-Idaho Student</span>
+                <span>🤖 AI-Powered Solutions</span>
+                <span>💻 Full-Stack Development</span>
+                <span>📱 Mobile + Web Apps</span>
+                <span>🚀 Seeking Internships</span>
             </div>
         </div>
-    </header>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Skills Section -->
-        <section class="skills-section">
-            <h2 class="section-title">Technical Skills</h2>
-            <p class="section-subtitle">Technologies and tools I work with</p>
-            <div class="skills-grid">
-                <span class="skill-tag">Cloud Databases</span>
-                <span class="skill-tag">Firebase</span>
-                <span class="skill-tag">Typescript</span>
-                <span class="skill-tag">Flutter</span>
-                <span class="skill-tag">C#</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">HTML5</span>
-                <span class="skill-tag">CSS3</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">Responsive Design</span>
-                <span class="skill-tag">Web Accessibility</span>
-                <span class="skill-tag">Git & GitHub</span>
-            </div>
-        </section>
+    </section>
 
-        <!-- Featured Projects -->
-        <section>
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">Showcasing my best work from my personal and educational studies</p>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-img">✈️</div>
-                    <div class="project-content">
-                        <h3>iTravel App</h3>
-                        <p>A full-stack travel planning app built with Flutter and Firebase, allowing users to securely store and manage trip data in real-time.</p>
-                        <div class="project-tags">
-                            <span class="tag">Flutter</span>
-                            <span class="tag">Firebase</span>
-                            <span class="tag">Authentication</span>
-                            <span class="tag">Real-Time Cloud DB</span>
-                        </div>
-                        <a href="https://github.com/Moroni-MB/PersonalProjects/tree/main/travel_planner_app" class="project-link" target="_blank">View Project →</a>
-                    </div>
-                </div>
+    <!-- FEATURED PROJECTS PREVIEW -->
+    <section class="featured">
 
-                <div class="project-card">
-                    <div class="project-img">🎓</div>
-                    <div class="project-content">
-                        <h3>Adulting 101</h3>
-                        <p>An interactive learning platform that helps young adults build real-world life skills through structured lessons and progress tracking.</p>
-                        <div class="project-tags">
-                            <span class="tag">Flutter</span>
-                            <span class="tag">UI/UX</span>
-                            <span class="tag">State Management</span>
-                            <span class="tag">Mobile App</span>
-                        </div>
-                        <a href="https://github.com/Moroni-MB/PersonalProjects/tree/main/adultingapp" class="project-link" target="_blank">View Project →</a>
-                    </div>
-                </div>
+        <h2 class="section-title">Featured Work</h2>
+        <p class="section-subtitle">A preview of some of my favorite projects</p>
 
-                <div class="project-card">
-                    <div class="project-img">🤖</div>
-                    <div class="project-content">
-                        <h3>JARVIS Assistant (C#)</h3>
-                        <p>A modular assistant system built in C# featuring command handling, assistant modules, and scalable architecture for future AI integration.</p>
-                        <div class="project-tags">
-                            <span class="tag">C#</span>
-                            <span class="tag">OOP</span>
-                            <span class="tag">Modular Design</span>
-                            <span class="tag">Console App</span>
-                        </div>
-                        <a href="https://github.com/Moroni-MB/cse210-projects/tree/main/final/FinalProject" class="project-link" target="_blank">View Project →</a>
-                    </div>
-                </div>
+        <div class="projects-grid">
 
-                <div class="project-card">
-                    <div class="project-img">🧩</div>
-                    <div class="project-content">
-                        <h3>Canvas Productivity Extension</h3>
-                        <p>A browser extension designed to enhance the Canvas LMS experience by improving workflow efficiency and user interface usability.</p>
-                        <div class="project-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Chrome Extension</span>
-                            <span class="tag">DOM Manipulation</span>
-                            <span class="tag">UX Enhancement</span>
-                        </div>
-                        <a href="LINK_TO_GITHUB_OR_DEMO" class="project-link" target="_blank">View Project →</a>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-img">🎨</div>
-                    <div class="project-content">
-                        <h3>Personal Portfolio Site</h3>
-                        <p>Complete portfolio website showcasing my work, skills, and professional experience.</p>
-                        <div class="project-tags">
-                            <span class="tag">Full Site</span>
-                            <span class="tag">Responsive</span>
-                            <span class="tag">Portfolio</span>
-                        </div>
-                        <a href="final-project/index.html" class="project-link">View Project →</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img">💳</div>
-                    <div class="project-content">
-                        <h3>Credit Card Benefits Tracker</h3>
-                        <p>An interactive tool to help users track and maximize their credit card rewards and benefits.</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
-                        <a href="creditcard/index.html" class="project-link">View Project →</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img">📸</div>
-                    <div class="project-content">
-                        <h3>Coolpics Gallery</h3>
-                        <p>A responsive image gallery with modern design and smooth transitions for viewing photos.</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">Responsive</span>
-                        </div>
-                        <a href="coolpics/index.html" class="project-link">View Project →</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img">✍️</div>
-                    <div class="project-content">
-                        <h3>Blog Project</h3>
-                        <p>A clean, modern blog layout demonstrating semantic HTML and CSS best practices.</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">Typography</span>
-                        </div>
-                        <a href="blog/index.html" class="project-link">View Project →</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img">📚</div>
-                    <div class="project-content">
-                        <h3>Course Selector</h3>
-                        <p>Dynamic course filtering system with JavaScript functionality and clean UI design.</p>
-                        <div class="project-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">DOM</span>
-                            <span class="tag">Filtering</span>
-                        </div>
-                        <a href="courses/courses.html" class="project-link">View Project →</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img">📝</div>
-                    <div class="project-content">
-                        <h3>Registration Form</h3>
-                        <p>User-friendly registration form with validation and accessible design principles.</p>
-                        <div class="project-tags">
-                            <span class="tag">Forms</span>
-                            <span class="tag">Validation</span>
-                            <span class="tag">Accessibility</span>
-                        </div>
-                        <a href="register/index.html" class="project-link">View Project →</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img">🍳</div>
-                    <div class="project-content">
-                        <h3>Recipe Collection</h3>
-                        <p>Beautiful recipe cards with organized layout and intuitive navigation system.</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS Grid</span>
-                            <span class="tag">Layout</span>
-                        </div>
-                        <a href="recipes/index.html" class="project-link">View Project →</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img">📋</div>
-                    <div class="project-content">
-                        <h3>Site Plan</h3>
-                        <p>Detailed planning document for the personal portfolio project including wireframes and design.</p>
-                        <div class="project-tags">
-                            <span class="tag">Planning</span>
-                            <span class="tag">Design</span>
-                            <span class="tag">Documentation</span>
-                        </div>
-                        <a href="final-project/site-plan.html" class="project-link">View Plan →</a>
-                    </div>
+            <div class="project-card">
+                <div class="project-img">✈️</div>
+                <div class="project-content">
+                    <h3>iTravel App</h3>
+                    <p>Full-stack travel planner with Firebase backend and real-time data sync.</p>
+                    <a href="projects.html" class="project-link">View All Projects →</a>
                 </div>
             </div>
-        </section>
-    </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Moroni Montoya | Personal Portfolio | Built with passion for web development</p>
-    </footer>
+            <div class="project-card">
+                <div class="project-img">🤖</div>
+                <div class="project-content">
+                    <h3>JARVIS Assistant</h3>
+                    <p>Modular C# assistant system built with scalable object-oriented design.</p>
+                    <a href="projects.html" class="project-link">View All Projects →</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">🎓</div>
+                <div class="project-content">
+                    <h3>Adulting 101</h3>
+                    <p>Learning platform focused on real-world life skills and progression tracking.</p>
+                    <a href="projects.html" class="project-link">View All Projects →</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="text-align:center; margin-top: 2rem;">
+            <a href="projects.html" class="primary-btn">See All Projects</a>
+        </div>
+
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2026 Moroni Montoya | Built with HTML, CSS, JavaScript & passion for development</p>
+</footer>
+
+<script>
+const roles = [
+    "Full-Stack Developer",
+    "Flutter & Mobile App Builder",
+    "C# Software Developer",
+    "JavaScript Web Developer",
+    "BYU-Idaho Computer Science Student"
+];
+
+const element = document.getElementById("typing-role");
+
+let roleIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeRoles() {
+    const currentRole = roles[roleIndex];
+
+    if (!isDeleting) {
+        element.textContent = currentRole.substring(0, charIndex + 1);
+        charIndex++;
+
+        if (charIndex === currentRole.length) {
+            isDeleting = true;
+            setTimeout(typeRoles, 1200);
+            return;
+        }
+    } else {
+        element.textContent = currentRole.substring(0, charIndex - 1);
+        charIndex--;
+
+        if (charIndex === 0) {
+            isDeleting = false;
+            roleIndex = (roleIndex + 1) % roles.length;
+        }
+    }
+
+    setTimeout(typeRoles, isDeleting ? 60 : 100);
+}
+
+typeRoles();
+</script>
+
 </body>
 </html>

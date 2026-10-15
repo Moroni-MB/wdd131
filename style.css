@@ -1,4 +1,6 @@
-/* Reset and Base Styles */
+/* =========================
+   RESET + BASE
+========================= */
 * {
     margin: 0;
     padding: 0;
@@ -13,88 +15,161 @@ body {
     min-height: 100vh;
 }
 
-/* Header */
-header {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    padding: 4rem 2rem 3rem;
-    text-align: center;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.profile-section {
-    max-width: 800px;
-    margin: 0 auto;
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
 }
 
-.profile-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #4facfe;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 8px 20px rgba(79, 172, 254, 0.3);
-}
-
-header h1 {
-    font-size: 3rem;
+.logo {
     font-weight: 800;
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    letter-spacing: -1px;
-    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #1a1a1a;
 }
 
-.subtitle {
-    font-size: 1.3rem;
-    color: #4a5568;
-    font-weight: 500;
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 600;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: #4facfe;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* =========================
+   HERO (HOME PAGE)
+========================= */
+.hero {
+    text-align: center;
+    padding: 7rem 2rem 5rem;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
     margin-bottom: 1rem;
 }
 
-.bio {
+.hero-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+}
+
+.hero-description {
+    max-width: 750px;
+    margin: 0 auto;
     font-size: 1.1rem;
-    color: #718096;
-    max-width: 600px;
-    margin: 1.5rem auto;
+    opacity: 0.85;
     line-height: 1.7;
 }
 
-.social-links {
+/* =========================
+   BUTTONS
+========================= */
+.cta-buttons {
+    margin-top: 2rem;
     display: flex;
-    gap: 1.5rem;
     justify-content: center;
-    margin-top: 1.5rem;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
-.social-links a {
-    color: #4facfe;
-    text-decoration: none;
-    font-size: 1.1rem;
+.primary-btn,
+.secondary-btn {
+    padding: 0.9rem 2rem;
+    border-radius: 12px;
     font-weight: 600;
-    padding: 0.5rem 1.5rem;
-    border: 2px solid #4facfe;
-    border-radius: 8px;
-    transition: all 0.3s ease;
+    text-decoration: none;
+    transition: 0.25s ease;
 }
 
-.social-links a:hover {
-    background: #4facfe;
+.primary-btn {
+    background: white;
+    color: #1a1a1a;
+}
+
+.primary-btn:hover {
+    transform: translateY(-3px);
+}
+
+.secondary-btn {
+    border: 2px solid white;
     color: white;
-    transform: translateY(-2px);
 }
 
-/* Main Content */
-main {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 4rem 2rem;
+.secondary-btn:hover {
+    background: white;
+    color: #1a1a1a;
 }
 
+/* =========================
+   OVERVIEW SECTION
+========================= */
+.overview {
+    padding: 5rem 2rem;
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.overview-card {
+    background: rgba(255,255,255,0.92);
+    padding: 2rem;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+}
+
+/* =========================
+   FEATURED / PROJECTS PAGE
+========================= */
+.featured {
+    padding: 2rem 2rem 5rem;
+}
+
+/* =========================
+   SECTION HEADINGS
+========================= */
 .section-title {
     font-size: 2.5rem;
     font-weight: 700;
@@ -111,32 +186,9 @@ main {
     margin-bottom: 3rem;
 }
 
-/* Skills Section */
-.skills-section {
-    margin-bottom: 4rem;
-}
-
-.skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.skill-tag {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    padding: 0.7rem 1.5rem;
-    border-radius: 25px;
-    font-weight: 600;
-    color: #2d3748;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-/* Projects Section */
+/* =========================
+   PROJECT GRID
+========================= */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -144,6 +196,9 @@ main {
     margin-bottom: 3rem;
 }
 
+/* =========================
+   PROJECT CARD
+========================= */
 .project-card {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -186,6 +241,9 @@ main {
     line-height: 1.6;
 }
 
+/* =========================
+   TAGS
+========================= */
 .project-tags {
     display: flex;
     flex-wrap: wrap;
@@ -202,6 +260,9 @@ main {
     font-weight: 600;
 }
 
+/* =========================
+   PROJECT LINK BUTTON
+========================= */
 .project-link {
     display: inline-block;
     background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
@@ -219,7 +280,29 @@ main {
     box-shadow: 0 6px 20px rgba(79, 172, 254, 0.4);
 }
 
-/* Footer */
+/* =========================
+   VIEW DEMO BUTTON
+========================= */
+.view-demo-link {
+    display: inline-block;
+    background: linear-gradient(135deg, #fe4f4f 0%, #fe6600 100%);
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(254, 79, 79, 0.3);
+}
+
+.view-demo-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(254, 79, 79, 0.4);
+}
+
+/* =========================
+   FOOTER
+========================= */
 footer {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -233,17 +316,81 @@ footer p {
     font-size: 1rem;
 }
 
-/* Responsive */
+/* =========================
+   SINGLE OVERVIEW CARD
+========================= */
+.overview-card-single {
+    max-width: 850px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Title inside card */
+.overview-card-single h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+}
+
+/* Text inside card */
+.overview-card-single p {
+    font-size: 1.05rem;
+    color: #4a5568;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+}
+
+/* Highlight chips */
+.overview-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 2rem;
+}
+
+.overview-highlights span {
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Typing cursor */
+.cursor {
+    display: inline-block;
+    margin-left: 2px;
+    color: white;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
+
+    .hero h1 {
+        font-size: 2.5rem;
     }
 
-    .subtitle {
+    .hero-subtitle {
         font-size: 1.1rem;
     }
 
-    .bio {
+    .hero-description {
         font-size: 1rem;
     }
 
@@ -256,7 +403,12 @@ footer p {
         font-size: 2rem;
     }
 
-    main {
-        padding: 3rem 1.5rem;
+    .nav-links {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .nav-container {
+        padding: 1rem;
     }
 }
